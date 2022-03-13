@@ -1,0 +1,59 @@
+.sidebar {
+  background-color: rgba(44, 40, 38, 0.04);
+  background-image: url("/stamp.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  padding: 11px 15px 0;
+}
+@media (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    height: calc(100vh - 110px);
+  }
+}
+@media (min-width: 768px) {
+  .sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    flex: 0 0 calc(100% / 4);
+  }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .sidebar {
+    flex: 0 0 calc(100% / 5);
+  }
+}
+@media (min-width: 1400px) {
+  .sidebar {
+    flex: 0 0 calc(100% / 6);
+  }
+}
+.sidebar ul {
+  margin-bottom: 3rem;
+}
+.sidebar ul li {
+  margin-bottom: -1px;
+}
+.sidebar ul li a {
+  display: block;
+  color: var(--alt-color);
+  border-bottom: 1px solid #e9e8e7;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: var(--main-color);
+  border-bottom-color: var(--main-color);
+  font-weight: 700;
+}

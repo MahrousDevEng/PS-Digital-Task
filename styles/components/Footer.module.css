@@ -1,0 +1,144 @@
+.footer {
+  color: var(--text);
+  background-color: var(--alt-text);
+  font-size: 16px;
+  padding: 30px 1px 15px;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .options section:not(:last-of-type) {
+    flex-basis: calc(50% - 0.5rem);
+  }
+}
+.options h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light);
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.options h5 span {
+  color: var(--main-color);
+}
+.options a {
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  line-height: 2.25;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.options a:hover {
+  color: var(--light);
+}
+.contact {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.join p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--light);
+  text-transform: uppercase;
+}
+@media (min-width: 992px) {
+  .join {
+    align-self: flex-end;
+  }
+}
+.poster {
+  display: flex;
+  align-items: center;
+}
+.poster a:hover {
+  transform: scale(0.8);
+}
+.contact-list h5 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--light);
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.contact-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-list ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  color: var(--light);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  font-size: 17px;
+}
+.contact-list ul a:hover {
+  background-color: var(--main-color);
+}
+.copyright {
+  display: flex;
+  color: var(--text);
+  font-size: 11px;
+  gap: 1rem;
+}
+@media (max-width: 991px) {
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .copyright {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.reserved {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  line-height: 1.2;
+}
+.reserved a:hover {
+  color: var(--light);
+}
+.privacy a {
+  color: var(--light);
+  padding: 5px;
+}
+.privacy a:hover {
+  color: var(--main-color);
+}
+.mApp a {
+  display: inline-block;
+  padding: 5px;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container span {
+  width: 50px;
+  display: inline-block;
+  align-self: stretch;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  pointer-events: none;
+}
+.container button {
+  background-color: var(--main-color);
+  color: var(--alt-text);
+  cursor: pointer;
+  border: none;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+}
+.decrease {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.increase {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

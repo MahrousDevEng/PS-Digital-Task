@@ -1,0 +1,109 @@
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--light);
+  min-height: calc(100vh - 414px);
+}
+.header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 35px;
+  line-height: 1.4;
+}
+.header p {
+  color: #a39382;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+.tabs {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.tabs button {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  border: none;
+}
+.tabs button svg {
+  border: 2px solid var(--main-color);
+  padding: 1rem 0.75rem;
+  border-radius: 50%;
+  background-color: var(--light);
+  color: var(--main-color);
+}
+.tabs button span {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.ingrediants {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.ingrediants table {
+  text-align: center;
+  border-collapse: collapse;
+}
+@media (max-width: 991px) {
+  .ingrediants table {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .ingrediants table {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.ingrediants table tbody tr {
+  border-bottom: 2px solid #e9e8e7;
+  vertical-align: middle;
+}
+.ingrediants table tbody tr td {
+  padding: 1rem;
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  .ingrediants table tbody tr td {
+    display: block;
+    width: 100%;
+  }
+}
+.ingredient-name {
+  color: var(--alt-text);
+  text-transform: uppercase;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.links a {
+  display: inline-block;
+  min-width: 90px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: var(--alt-text);
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 9px;
+  border: none;
+}
+.links a:hover {
+  background-color: var(--alt-text);
+  color: var(--light);
+}
